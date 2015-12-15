@@ -10,7 +10,12 @@ However, only the modified files are included.
 Simply copy the modified files to the corresponding directory of the original software.
 
 Special note for running Booksim:
-  The config files are named ......
+  The config files that we use for simulating is located at src/example/mesh33
+  To enable DoS detection, add -DTRACK_DOS to flags when compiling
+  To enable SPEAR, add -DPRIV_MODE to flags when compiling
+  The injection rate of node 0 is defined separately by comp_rate. 
+  You can set that it in the config file by adding comp_rate=(value), just like how injection_rate is set.
+  It defaults to 0.1 if not explicitly specified.
 
 
 Special note for running Verilog:
