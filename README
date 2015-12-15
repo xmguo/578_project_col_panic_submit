@@ -1,0 +1,20 @@
+SecureNoC: Enhancing On-Chip Network Security for Many Integrated Core Systems
+Authors: Xiaoming Guo, Sijia He, Amlan Nayak, and Jay Zhang
+
+
+BookSim 2.0 is in ./BookSim
+Dally's RTL is in ./Verilog
+
+The subdirectories in ./BookSim and ./Verilog have the same structures as the original software.
+However, only the modified files are included.
+Simply copy the modified files to the corresponding directory of the original software.
+
+Special note for running Booksim:
+  The config files are named ......
+
+
+Special note for running Verilog:
+  We added a new directory called syn/ 
+  It contains the tcl file as well as a Makefile
+  To run synthesis, type make
+
