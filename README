@@ -10,7 +10,7 @@ However, only the modified files are included.
 Simply copy the modified files to the corresponding directory of the original software.
 
 Special note for running Booksim:
-  The config files that we use for simulating is located at src/example/mesh33
+  The config file that we used for simulation is located at src/example/mesh33
   To enable DoS detection, add -DTRACK_DOS to flags when compiling
   To enable SPEAR, add -DPRIV_MODE to flags when compiling
   The injection rate of node 0 is defined separately by comp_rate. 
