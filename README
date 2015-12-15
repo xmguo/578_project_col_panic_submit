@@ -1,4 +1,4 @@
-SecureNoC: Enhancing On-Chip Network Security for Many Integrated Core Systems
+ScureNoC: Enhancing On-Chip Network Security for Many Integrated Core Systems
 Authors: Xiaoming Guo, Sijia He, Amlan Nayak, and Jay Zhang
 
 
@@ -10,8 +10,19 @@ However, only the modified files are included.
 Simply copy the modified files to the corresponding directory of the original software.
 
 Special note for running Booksim:
-  The config files are named ......
+  Additional compilation flags were added to the Makefile
+  to enable/disable DoS detection and recovery mechanism
+  and SPEAR. The flags are named as follows:
+  TRACK_DOS := enable DoS tracking and recovery mechanism
+  PRIV_MODE := enable SPEAR infrastructure
+  
+  Please uncomment these flags in the Makefile to run simulations
+  with the security mechanisms enabled. After modifying the Makefile
+  ensure that you 'make clean' before running 'make.' 
 
+  To set the DoS node injection rate, please set the config 
+  variable comp_rate in the example mesh33 configuration file
+  in the examples/ subdirectory.
 
 Special note for running Verilog:
   We added a new directory called syn/ 
